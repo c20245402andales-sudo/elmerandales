@@ -1,0 +1,29 @@
+<footer id="footer"
+    class="border-t border-slate-200 px-5 py-10 text-center dark:border-slate-800">
+
+    <h2 class="text-xl font-bold">
+        Elmer L. <span class="text-orange-500">Andales</span>
+    </h2>
+
+    <p class="mt-3 text-sm text-slate-500 dark:text-slate-400">
+        Web Developer · System Developer
+    </p>
+
+    <nav class="my-5 flex flex-wrap justify-center gap-6 text-sm">
+        <a class="link" href="#projects">Projects</a>
+        <a class="link" href="#services">Services</a>
+        <a class="link" href="#contact">Contact</a>
+    </nav>
+
+    <p class="text-xs text-slate-500 dark:text-slate-400">
+        &copy; <span id="year"></span> Elmer L. Andales. All rights reserved.
+    </p>
+</footer>
+
+<script>
+    const year = document.querySelector("#year");
+
+    if (year) {
+        year.textContent = new Date().getFullYear().toString();
+    }
+</script>
